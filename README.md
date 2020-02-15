@@ -1,2 +1,2 @@
-# iiht-dotnet
-Repository for dotnet platform
+# iiht-java
+Repository for Java platform
