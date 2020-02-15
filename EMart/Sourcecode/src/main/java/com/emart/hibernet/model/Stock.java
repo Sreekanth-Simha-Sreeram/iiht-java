@@ -1,0 +1,35 @@
+package com.emart.hibernet.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Stock")
+public class Stock {
+	
+	
+	@Id
+	@Column(name="stockId")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	int stockId;
+	@Column(name="stockQuantity")
+	int stockQuantity;
+	public int getStockId() {
+		return stockId;
+	}
+	public void setStockId(int stockId) {
+		this.stockId = stockId;
+	}
+	public int getStockQuantity() {
+		return stockQuantity;
+	}
+	public void setStockQuantity(int stockQuantity) {
+		this.stockQuantity = stockQuantity;
+	}
+	
+
+}
