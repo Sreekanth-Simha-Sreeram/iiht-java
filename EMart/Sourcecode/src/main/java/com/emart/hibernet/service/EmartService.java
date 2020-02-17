@@ -7,14 +7,13 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.emart.hibernet.dao.EMartDAO;
-import com.emart.hibernet.dao.EmartDAOImpl;
+
 import com.emart.hibernet.model.Emart;
 
 @Component
 public class EmartService {
 	
-	@Autowired
+	/*@Autowired
 	EmartDAOImpl stdDAO;
 	
 	@Transactional
@@ -22,7 +21,7 @@ public class EmartService {
 		return this.stdDAO.getAllItem();
 	}
 
-	/*public List<Emart> getAllItems() {
+	public List<Emart> getAllItems() {
 		// TODO Auto-generated method stub
 		return null;
 	}*/

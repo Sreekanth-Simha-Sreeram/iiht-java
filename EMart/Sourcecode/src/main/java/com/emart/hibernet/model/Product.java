@@ -20,6 +20,13 @@ public class Product {
 	int productPrice;
 	@Column(name="productType")
     String productType;
+	
+	@Column(name="category")
+    String category;
+	
+	@Column(name="subcategory")
+    String subcategory;
+	
 	public String getProductName() {
 		return productName;
 	}
@@ -43,6 +50,18 @@ public class Product {
 	}
 	public void setProductType(String productType) {
 		this.productType = productType;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public String getSubcategory() {
+		return subcategory;
+	}
+	public void setSubcategory(String subcategory) {
+		this.subcategory = subcategory;
 	}
     
 }

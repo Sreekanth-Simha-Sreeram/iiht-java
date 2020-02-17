@@ -5,15 +5,18 @@ import java.util.List;
 import java.util.ArrayList;
 public interface BuyerService
 {
+		public void createBuyer(Buyer buyer);
 		public List<Product> searchProducts(String productName,String productCategory,String productSubcategory);
 		
 		public boolean addToCart(List<Product>product,int buyerId);
 		
-		public List<Product> filterProducts(String productName,int price,String productCategory,String productSubcategory);
 		
-		public void deleteFromCart(List<Product>product);
+		public void deleteFromCart(List<Product>product, int buyerid);
 		
-		public void viewCart(List<Product>product,int buyerId);
+		public List<Product> viewCart(int buyerId);
 		
-		public void placeOrder(List<Product>product,Buyer buyer);
+		public void placeOrder(List<Product>product,int buyerid);
+		
+		public Buyer findBuyer(int buyerId);
+		
 }

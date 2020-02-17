@@ -18,6 +18,15 @@ public class Stock {
 	int stockId;
 	@Column(name="stockQuantity")
 	int stockQuantity;
+	@Column(name="uom")
+	String uom;
+	
+	public String getUom() {
+		return uom;
+	}
+	public void setUom(String uom) {
+		this.uom = uom;
+	}
 	public int getStockId() {
 		return stockId;
 	}

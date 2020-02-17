@@ -13,10 +13,8 @@
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
     
-	<context:component-scan base-package="com.emart.hibernet.model" />
-	<context:component-scan base-package="com.emart.hibernet.dao" />
-	<context:component-scan base-package="com.emart.hibernet.controller" />
-	<context:component-scan base-package="com.emart.hibernet.service" />
+	<context:component-scan base-package="com.*" />
+	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<property name="viewClass"
@@ -58,13 +56,15 @@
 		<property name="dataSource" ref="datasource" />
 		 <property name="annotatedClasses">
   			<list>
+   				<value>com.emart.hibernet.model.Buyer</value>
+   				<value>com.emart.hibernet.model.Cart</value>
+   				<value>com.emart.hibernet.model.Category</value>
    				<value>com.emart.hibernet.model.Emart</value>
    				<value>com.emart.hibernet.model.Product</value>
    				<value>com.emart.hibernet.model.Seller</value>
-   				<value>com.emart.hibernet.model.Buyer</value>
-   				<value>com.emart.hibernet.model.Category</value>
-   				<value>com.emart.hibernet.model.User</value>
    				<value>com.emart.hibernet.model.Stock</value>
+   				<value>com.emart.hibernet.model.User</value>
+   				
   			</list>
   		</property>
 		<property name="hibernateProperties">
